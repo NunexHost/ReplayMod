@@ -544,7 +544,7 @@ tasks.register('bundleJar', com.github.jengelman.gradle.plugins.shadow.tasks.Sha
             filter { it.replace('de/johni0702', 'com/replaymod/lib/de/johni0702') }
         }
     }
-    dependsOn { FABRIC ? jGui.tasks.remapJar : (mcVersion >= 10800 ? jGui.tasks.reobfJar : jGui.tasks.reobf) }
+   // dependsOn { FABRIC ? jGui.tasks.remapJar : (mcVersion >= 10800 ? jGui.tasks.reobfJar : jGui.tasks.reobf) }
     relocate 'de.johni0702', 'com.replaymod.lib.de.johni0702'
 
     manifest.inheritFrom tasks.jar.manifest
