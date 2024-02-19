@@ -436,7 +436,6 @@ dependencies {
     }
 
     testImplementation 'junit:junit:4.11'
-}
 
 if (mcVersion <= 10710) {
     // FG 1.2 adds all MC deps to the compile configuration which we don't want
