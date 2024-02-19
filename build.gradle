@@ -390,7 +390,7 @@ dependencies {
     // FIXME this should be pulled in by ReplayStudio, and IntelliJ sees it, but javac for some reason does not
     implementation 'com.github.viaversion:opennbt:0a02214' // 2.0-SNAPSHOT (ViaVersion Edition)
 
-    implementation(FABRIC ? dependencies.project(path: jGui.path, configuration: "namedElements") : jGui) {
+ //   implementation(FABRIC ? dependencies.project(path: jGui.path, configuration: "namedElements") : jGui) {
         transitive = false // FG 1.2 puts all MC deps into the compile configuration and we don't want to shade those
     }
     shadow 'com.github.ReplayMod:lwjgl-utils:27dcd66'
